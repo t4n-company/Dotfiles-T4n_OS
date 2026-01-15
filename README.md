@@ -1,43 +1,12 @@
 # T4n OS Dotfiles
 
-Dotfiles T4n OS untuk setup desktop yang **ringan, terkendali, dan minimal**. Ditujukan untuk user yang paham Linux dan tidak bergantung pada GUI berlebihan.
+## Gh0sT4n Dotfiles
+[Gh0sT4n-Void](https://github.com/gh0st4n/dotfiles/tree/void-linux)
 
-## Lingkungan
-
-* **BSPWM** — Tiling X11, keyboard-centric
-* **XFCE4** — Desktop ringan & stabil
-* **KDE Plasma** — Desktop lengkap tanpa efek berlebihan
-* **RiverWM** — Tiling Wayland, modern & eksperimental
-
-## Struktur Singkat
-
-```text
-BSPWM → branch bspwm
-RiverWM → branch riverwm
-XFCE4 → branch xfce4
-KDE Plasma → branch KDE
+## Minimal BSPWM setup
 ```
-
-## Penggunaan
-
-> **Peringatan:** Bisa menimpa konfigurasi lama.
-
-```bash
-git clone -b bspwm https://github.com/<username>/t4n-dotfiles.git
-cp -r bspwm ~/.config/
+git clone -b bspwm https://github.com/t4n-company/Dotfiles-T4n_OS.git
+cd Dotfiles-T4n_OS
+chmod +x install
+./install
 ```
-
-Disarankan pakai `stow` jika paham.
-
-## Catatan
-
-- **BSPWM & RiverWM** → cepat & ringan, tapi perlu adaptasi.
-- **XFCE & KDE** → lebih nyaman, tapi lebih berat.
-
-Repo ini tidak untuk user yang ingin klik-klik dan animasi.
-
-## Lisensi
-
-Mengikuti lisensi bebas sesuai masing-masing komponen.
-
-**T4n OS — Control over convenience.**
