@@ -18,12 +18,6 @@ XFCE4 → branch xfce4
 KDE Plasma → branch KDE
 ```
 
-```
-git clone https://github.com/t4n-company/Dotfiles-T4n_OS.git
-chmod +x install
-./install
-```
-
 ## Penggunaan
 
 > **Peringatan:** Bisa menimpa konfigurasi lama.
@@ -34,6 +28,13 @@ cp -r bspwm ~/.config/
 ```
 
 Disarankan pakai `stow` jika paham.
+
+## Script install
+```
+git clone https://github.com/t4n-company/Dotfiles-T4n_OS.git
+chmod +x install
+./install
+```
 
 ## Catatan
 
