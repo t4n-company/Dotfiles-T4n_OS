@@ -1,0 +1,59 @@
+#!/usr/bin/bash
+
+# Fungsi untuk menampilkan menu
+show_menu() {
+    clear
+    echo "=========================================="
+    echo "  Pilih Desktop Environment / Window Manager"
+    echo "=========================================="
+    echo "  1. XFCE4"
+    echo "  2. BSPWM"
+    echo "  3. KDE"
+    echo "  4. RiverWM"
+    echo "  5. Keluar"
+    echo "=========================================="
+}
+
+# Fungsi utama
+main() {
+    while true; do
+        show_menu
+        read -p "Masukkan pilihan [1-5]: " choice
+        
+        case $choice in
+            1)
+                echo "Mengclone Dotfiles untuk XFCE4..."
+                git clone -b xfce4 https://github.com/t4n-company/Dotfiles-T4n_OS
+                echo "✅ Clone selesai!"
+                ;;
+            2)
+                echo "Mengclone Dotfiles untuk BSPWM..."
+                git clone -b bspwm https://github.com/t4n-company/Dotfiles-T4n_OS
+                echo "✅ Clone selesai!"
+                ;;
+            3)
+                echo "Mengclone Dotfiles untuk KDE..."
+                git clone -b kde https://github.com/t4n-company/Dotfiles-T4n_OS
+                echo "✅ Clone selesai!"
+                ;;
+            4)
+                echo "Mengclone Dotfiles untuk RiverWM..."
+                git clone -b river https://github.com/t4n-company/Dotfiles-T4n_OS
+                echo "✅ Clone selesai!"
+                ;;
+            5)
+                echo "Keluar dari program."
+                exit 0
+                ;;
+            *)
+                echo "❌ Pilihan tidak valid! Masukkan angka 1-5."
+                sleep 2
+                ;;
+        esac
+        
+        read -p "Tekan Enter untuk melanjutkan..."
+    done
+}
+
+# Eksekusi program
+main
